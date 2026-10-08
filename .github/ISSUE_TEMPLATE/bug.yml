@@ -1,0 +1,99 @@
+name: Bug report
+description: Something does not work the way it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the trouble. Most of what gets fixed next is
+        whatever somebody bothered to report.
+
+        **Before you paste logs or screenshots:** read them first. Hostnames,
+        usernames, IP addresses and keys turn up in terminal output far more
+        often than people expect, and this repository is public.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - MangoSSH
+        - MangoDock
+        - MangoFly
+        - MangoWiFi
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Settings → About, or the version in the installer filename.
+      placeholder: "1.0.103"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: platform_detail
+    attributes:
+      label: Which version of it
+      description: Windows 11, macOS 15, Ubuntu 24.04 — and the kernel if it is a Linux radio or WireGuard problem.
+      placeholder: "Ubuntu 24.04, kernel 6.8"
+
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      description: MangoSSH only. Skip it for the others.
+      options:
+        - "Not applicable"
+        - "Internet"
+        - "Air-gapped (Secure)"
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: What you did, in the order you did it, and where it went wrong.
+      placeholder: |
+        1. Added an SSH host at 10.0.0.4
+        2. Clicked Connect
+        3. The tab opened and then closed again after about two seconds
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error text
+      description: Optional, but it usually saves a round trip. Redact anything private.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I checked the existing issues and this is not already reported
+          required: true
+        - label: I removed any hostnames, usernames, addresses or keys from what I pasted
+          required: true
