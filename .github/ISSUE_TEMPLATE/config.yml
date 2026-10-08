@@ -1,0 +1,16 @@
+# Questions and ideas belong in Discussions, and a security report belongs in
+# neither — the chooser says so before somebody opens the wrong kind of issue.
+blank_issues_enabled: false
+contact_links:
+  - name: Question — how do I…?
+    url: https://github.com/sbala146/mangossh-feedback/discussions/categories/q-a
+    about: Not sure whether something is a bug? Ask here first.
+  - name: Idea — something you want built
+    url: https://github.com/sbala146/mangossh-feedback/discussions/categories/ideas
+    about: Feature requests go to Discussions so others can vote on them.
+  - name: Security report
+    url: mailto:contact@mangossh.com
+    about: Please email rather than opening an issue, and give me a window to fix it first.
+  - name: Documentation and downloads
+    url: https://mangossh.com/
+    about: Guides, install instructions and every build.

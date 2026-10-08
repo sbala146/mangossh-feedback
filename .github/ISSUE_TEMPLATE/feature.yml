@@ -1,0 +1,60 @@
+name: Feature request
+description: Something is missing, and here is the case for it
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are not sure it is worth an issue, put it in
+        [Ideas](https://github.com/sbala146/mangossh-feedback/discussions/categories/ideas)
+        instead — other people can vote there, and that ordering is what
+        decides what gets built next.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - MangoSSH
+        - MangoDock
+        - MangoFly
+        - MangoWiFi
+        - More than one of them
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: >
+        The situation, not the solution. What you are actually trying to get
+        done is usually more useful than a described feature, because there
+        is often a shorter way to it.
+      placeholder: >
+        I keep four jump hosts for different customers and have to remember
+        which key belongs to which.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you have it do?
+      description: If you have a shape in mind, describe it. Skip this if you do not.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What do you do today instead?
+      description: >
+        Including "nothing, I gave up". How painful the workaround is tells
+        me more about priority than almost anything else.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I checked the existing issues and Ideas discussions for this
+          required: true
