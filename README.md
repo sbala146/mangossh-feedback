@@ -1,6 +1,6 @@
 # MangoSSH feedback
 
-This is where bugs, feature requests and questions go for all four Mango products.
+This is where bugs, feature requests and questions go for all five Mango products.
 
 There is **no code in this repository** — only the conversation. That is
 exactly what it is for: so you can see whether something is already reported
@@ -12,6 +12,7 @@ want built next. None of that is possible over email.
 | | |
 |---|---|
 | **[MangoSSH](https://mangossh.com/)** | SSH, RDP, VNC and SFTP hosts side by side, with an encrypted vault, an audit log, and an MCP server your AI tools can drive. Windows, macOS and Linux. |
+| **[MangoScreen](https://mangossh.com/products/mangoscreen)** | Remote desktop by Device ID, with no port forwarding. Peer-to-peer when the network allows and through your own relay when it does not — and the relay cannot read the session either way. |
 | **[MangoDock](https://mangossh.com/products/mangodock)** | Docker management with nothing on the hosts. Reaches each daemon over an ordinary SSH session — no agent to install, no port to open. |
 | **[MangoFly](https://mangossh.com/products/mangofly)** | A self-hosted WireGuard mesh. Devices connect straight to each other; the coordination server is one binary and a SQLite file, and never sees their traffic. |
 | **[MangoWiFi](https://mangossh.com/products/mangowifi)** | A Wi-Fi 6/7/8 test bench. One binary runs as Console or Agent either side of the access point under test, measuring latency under real load. |
