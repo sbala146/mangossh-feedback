@@ -18,6 +18,7 @@ body:
       label: Product
       options:
         - MangoSSH
+        - MangoScreen
         - MangoDock
         - MangoFly
         - MangoWiFi
