@@ -2,10 +2,10 @@
 
 This is where bugs, feature requests and questions go for all four Mango products.
 
-There is **no code in this repository**. The products are closed-source and
-their repositories are private; this one exists so the conversation about them
-can be public — so you can see whether something is already reported before
-writing it out again, and add your vote to what you want next.
+There is **no code in this repository** — only the conversation. That is
+exactly what it is for: so you can see whether something is already reported
+before writing it out again, add what you know to it, and vote on what you
+want built next. None of that is possible over email.
 
 ## The products
 
